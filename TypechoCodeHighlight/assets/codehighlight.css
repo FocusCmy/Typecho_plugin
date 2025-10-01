@@ -1,0 +1,35 @@
+/* macOS 容器 */
+.code-macos {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1.2rem 0;
+  box-shadow: 0 8px 22px rgba(0,0,0,.08);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+/* 顶部工具栏 */
+.code-macos__bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  padding: 0 12px;
+  background: linear-gradient(180deg, #f6f6f6, #eaeaea);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.code-macos__dot { width: 12px; height: 12px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(0,0,0,.09); }
+.code-macos__dot--red { background: #ff5f56; }
+.code-macos__dot--yellow { background: #ffbd2e; }
+.code-macos__dot--green { background: #27c93f; }
+.code-macos__title { margin-left: 8px; font-size: 12px; color: #666; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* 代码区 */
+.code-macos__body { background: #fff; }
+.code-macos pre { margin: 0 !important; padding: 14px 16px !important; overflow: auto; background: transparent !important; line-height: 1.55; font-size: 13px; }
+
+/* 行号插件适配（可选） */
+pre.line-numbers { padding-left: 3.2em !important; }
+
+@media (max-width: 600px) {
+  .code-macos pre { font-size: 12px; }
+}
